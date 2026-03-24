@@ -87,33 +87,18 @@
         }
         
         .logo {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             border-radius: 12px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
-        }
-        
-        .logo::before {
-            content: "🧠";
-            font-size: 32px;
-            filter: brightness(0) invert(1);
-        }
-        
-        .logo::after {
-            content: "";
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            background: url('logo.png') no-repeat center;
+            background-size: cover;
+            background-position: center;
+            background-color: transparent;
         }
         
         body.dark-mode .header h1 {
