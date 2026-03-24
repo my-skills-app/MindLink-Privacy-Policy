@@ -81,6 +81,39 @@
             line-height: 1.25;
             margin-bottom: 16px;
             color: #24292f;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+        
+        .logo::before {
+            content: "🧠";
+            font-size: 32px;
+            filter: brightness(0) invert(1);
+        }
+        
+        .logo::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         
         body.dark-mode .header h1 {
@@ -402,7 +435,7 @@
 <body class="dark-mode">
     <div class="container">
         <div class="header">
-            <h1>Privacy Policy</h1>
+            <h1><div class="logo"></div>Privacy Policy</h1>
             <div class="subtitle">MindLink Mobile Application</div>
             <div class="meta">
                 <p><strong>Effective Date:</strong> March 23, 2026</p>
